@@ -1,4 +1,4 @@
-# ElWhats Landing Page
+# El-Whats Landing Page
 
 Arabic responsive landing page for WhatsApp marketing service.
 
