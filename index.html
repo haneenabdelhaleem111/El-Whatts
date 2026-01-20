@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>elwhats الواتس</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/c10abdc52b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/logo-whatts.png" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Wrapper -->
+    <div
+      class="site-wrapper overflow-hidden position-relative"
+      id="background-hero"
+    >
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg px-3 py-2">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo-nav.png" height="40" />
+          </a>
+
+          <!-- Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto align-items-center gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="./images/flag-one.png"
+                    class="rounded-circle flag"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img
+                    src="./images/flag-two.png"
+                    class="rounded-circle flag"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="container py-5">
+        <div class="row align-items-center g-5">
+          <!-- Text -->
+          <div class="col-lg-6 text-center text-lg-end">
+            <p class="display-4 fw-normal mb-4">
+              احصل على المزيد من <br />العملاء عن طريق الواتساب
+            </p>
+
+            <p class="fs-5 fw-light mb-4">
+              احصل على المزيد من العملاء عن طريق ارسال رسائل واتساب بعدد كبير
+              وبشكل شخصي وطريقة سهلة.
+            </p>
+
+            <button class="btn btn-dark fs-5 px-5 py-2">ابدأ الآن</button>
+          </div>
+
+          <!-- Image -->
+          <div class="col-lg-6 text-center">
+            <img src="./images/hero-img.png" class="img-fluid" />
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Section One -->
+    <section class="container py-5">
+      <div class="row align-items-center g-5">
+        <!-- Image -->
+        <div class="col-lg-6 text-center">
+          <img src="./images/section-one-img.png" class="img-fluid" />
+        </div>
+
+        <!-- Text -->
+        <div class="col-lg-6 text-center text-lg-end">
+          <p class="display-5 fw-normal mb-4">
+            ارسل صور و <br />
+            فيديوهات بالواتساب
+          </p>
+
+          <p class="fs-5 fw-light">
+            يمكنك ارسال صور وفيديوهات بعدد كبير لعملائك باستخدام
+            <a href="#"><img src="./images/logo-nav.png" height="40" /></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="container py-5 text-center">
+      <p class="display-4 fw-normal">الأسعار</p>
+      <p class="fs-5 fw-light mb-4">
+        ابعت رسائل واتساب لعملائك بعدد كبير وبكل بساطة — لا حاجة لكتابة كود
+        برمجي
+      </p>
+
+      <!-- Buttons -->
+      <div class="d-flex justify-content-center gap-3 mb-5">
+        <button class="button-toggle" id="year-btn" onclick="change()">
+          سنوي
+        </button>
+        <button
+          class="button-toggle text-white"
+          id="month-btn"
+          onclick="remain()"
+        >
+          شهري
+        </button>
+      </div>
+
+      <!-- Cards -->
+      <div class="row justify-content-center g-4">
+        <!-- Card -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card-container p-4 h-100">
+            <p class="text-muted">1500</p>
+            <p class="display-6 fw-bold" id="pb1">$5.5</p>
+            <p class="text-muted" id="ps1">في الشهر</p>
+
+            <ul class="list-unstyled mt-4">
+              <li>1500 رسالة في الشهر</li>
+              <li>حتى 500 رسالة في اليوم</li>
+              <li>دعم فني بالواتساب والإيميل</li>
+              <li class="text-decoration-line-through">ارسال صور و فيديوهات</li>
+              <li class="text-decoration-line-through">
+                الحد الأقصى لحجم الملفات
+              </li>
+            </ul>
+
+            <button class="btn btn-dark mt-4">ابدأ الآن</button>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card-container p-4 h-100">
+            <p class="text-muted">3000</p>
+            <p id="pb2" class="display-6 fw-bold">$9.5</p>
+            <p id="ps2" class="text-muted">في الشهر</p>
+
+            <ul class="list-unstyled mt-4">
+              <li>3000 رسالة في الشهر</li>
+              <li>حتى 1000 رسالة في اليوم</li>
+              <li>دعم فني بالواتساب والإيميل</li>
+              <li>ارسال صور و فيديوهات</li>
+              <li>10MB الحد الأقصى لحجم الملفات</li>
+            </ul>
+
+            <button class="btn btn-success mt-4">ابدأ الآن</button>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card-container p-4 h-100">
+            <p class="text-muted">7000</p>
+            <p class="display-6 fw-bold" id="pb3">$19</p>
+            <p class="text-muted" id="ps3">في الشهر</p>
+
+            <ul class="list-unstyled mt-4">
+              <li>7000 رسالة في الشهر</li>
+              <li>حتى 1500 رسالة في اليوم</li>
+              <li>دعم فني بالواتساب والإيميل</li>
+              <li>ارسال صور و فيديوهات</li>
+              <li>30MB الحد الأقصى لحجم الملفات</li>
+            </ul>
+
+            <button class="btn btn-dark mt-4">ابدأ الآن</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-5">
+        للمزيد عن كيفية عمل الواتس،
+        <a href="#">اضغط هنا</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-light">
+      <div class="container text-center">
+        <img src="./images/logo-nav.png" height="40" />
+
+        <p class="mt-3">
+          اتصل بنا <br />
+          support@elwhats.com
+        </p>
+
+        <a href="#" class="d-block mb-3">ابعتلنا عالواتسآب</a>
+
+        <p>هذا الموقع صنع بحب <i class="fa-solid fa-heart text-danger"></i></p>
+        <p class="mb-0">© جميع الحقوق محفوظة - 2022 elwhats.com</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
